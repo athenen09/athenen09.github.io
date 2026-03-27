@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 - athenen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { color: white; font-size: 1.5em; font-weight: bold; text-decoration: none; }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover { background: rgba(255,255,255,0.2); }
+        .nav-links a.active { background: rgba(255,255,255,0.3); }
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+        .about-card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+        }
+        h1 { color: #333; text-align: center; margin-bottom: 10px; }
+        .bio { color: #666; text-align: center; margin-bottom: 30px; }
+        .section { margin-top: 30px; }
+        .section h2 { color: #333; margin-bottom: 15px; font-size: 1.2em; }
+        .section p { color: #666; line-height: 1.8; }
+        .links { margin-top: 30px; text-align: center; }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s;
+        }
+        .links a:hover { transform: translateY(-3px); }
+        footer {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            padding: 40px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">athenen</a>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="blog.html">博客</a>
+            <a href="about.html" class="active">关于</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="about-card">
+            <div class="avatar">A</div>
+            <h1>athenen</h1>
+            <p class="bio">热爱学习，享受生活</p>
+            
+            <div class="section">
+                <h2>关于我</h2>
+                <p>我是阿森，一个热爱学习和分享的人。这个博客用来记录我的学习心得、生活感悟和技术笔记。</p>
+            </div>
+            
+            <div class="section">
+                <h2>兴趣爱好</h2>
+                <p>阅读、编程、探索新事物...</p>
+            </div>
+            
+            <div class="links">
+                <a href="https://github.com/athenen09" target="_blank">GitHub</a>
+                <a href="mailto:example@email.com">联系我</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 athenen. All rights reserved.</p>
+    </footer>
+</body>
+</html>

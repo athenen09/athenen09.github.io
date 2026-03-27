@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的博客</title>
+    <title>博客 - athenen</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -29,14 +29,13 @@
             transition: background 0.3s;
         }
         .nav-links a:hover { background: rgba(255,255,255,0.2); }
+        .nav-links a.active { background: rgba(255,255,255,0.3); }
         .container {
             max-width: 800px;
             margin: 80px auto;
             padding: 0 20px;
         }
-        h1 { color: white; font-size: 3em; margin-bottom: 20px; }
-        .intro { color: rgba(255,255,255,0.9); font-size: 1.2em; line-height: 1.8; margin-bottom: 40px; }
-        .posts { margin-top: 60px; }
+        h1 { color: white; font-size: 2.5em; margin-bottom: 40px; }
         .post-card {
             background: white;
             border-radius: 15px;
@@ -62,24 +61,22 @@
         <a href="index.html" class="logo">athenen</a>
         <div class="nav-links">
             <a href="index.html">首页</a>
-            <a href="blog.html">博客</a>
+            <a href="blog.html" class="active">博客</a>
             <a href="about.html">关于</a>
         </div>
     </nav>
     
     <div class="container">
-        <h1>你好，我是阿森</h1>
-        <p class="intro">
-            这是一个记录学习与思考的地方。欢迎来到这里，一起探索知识的海洋。
-        </p>
-        
-        <div class="posts">
-            <h2 style="color: white; margin-bottom: 20px;">最新文章</h2>
-            <div class="post-card">
-                <div class="post-date">2026年3月27日</div>
-                <div class="post-title">博客上线了！</div>
-                <div class="post-excerpt">欢迎来到我的个人博客。这里将记录我的学习心得、生活感悟和代码分享。</div>
-            </div>
+        <h1>博客文章</h1>
+        <div class="post-card">
+            <div class="post-date">2026年3月27日</div>
+            <div class="post-title">博客上线了！</div>
+            <div class="post-excerpt">欢迎来到我的个人博客。这里将记录我的学习心得、生活感悟和代码分享。</div>
+        </div>
+        <div class="post-card">
+            <div class="post-date">2026年3月27日</div>
+            <div class="post-title">建设中...</div>
+            <div class="post-excerpt">更多内容即将上线，敬请期待！</div>
         </div>
     </div>
     
