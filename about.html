@@ -1,69 +1,96 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于 - athenen</title>
+    <title>About - Zihan Zhang</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #E8D5E8;
             min-height: 100vh;
         }
+        .emoji-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 60px;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+            line-height: 1.5;
+            overflow: hidden;
+        }
         nav {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.4);
             backdrop-filter: blur(10px);
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            z-index: 1;
         }
-        .logo { color: white; font-size: 1.5em; font-weight: bold; text-decoration: none; }
+        .logo { color: #6B4C7A; font-size: 1.5em; font-weight: bold; text-decoration: none; }
         .nav-links a {
-            color: white;
+            color: #6B4C7A;
             text-decoration: none;
             margin-left: 30px;
             padding: 8px 16px;
             border-radius: 20px;
             transition: background 0.3s;
         }
-        .nav-links a:hover { background: rgba(255,255,255,0.2); }
-        .nav-links a.active { background: rgba(255,255,255,0.3); }
+        .nav-links a:hover { background: rgba(107,76,122,0.1); }
+        .nav-links a.active { background: rgba(107,76,122,0.2); }
         .container {
             max-width: 800px;
             margin: 80px auto;
             padding: 0 20px;
+            position: relative;
+            z-index: 1;
         }
         .about-card {
-            background: white;
+            background: rgba(255,255,255,0.7);
             border-radius: 20px;
             padding: 50px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 60px rgba(107,76,122,0.15);
         }
         .avatar {
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #E8D5E8, #D4B8D4);
             border-radius: 50%;
             margin: 0 auto 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 3em;
-            color: white;
+            color: #6B4C7A;
+            border: 3px solid #D4B8D4;
         }
-        h1 { color: #333; text-align: center; margin-bottom: 10px; }
-        .bio { color: #666; text-align: center; margin-bottom: 30px; }
+        h1 { color: #6B4C7A; text-align: center; margin-bottom: 10px; }
+        .school { color: #8B6B9C; text-align: center; margin-bottom: 10px; }
+        .bio { color: #6B4C7A; text-align: center; margin-bottom: 30px; }
         .section { margin-top: 30px; }
-        .section h2 { color: #333; margin-bottom: 15px; font-size: 1.2em; }
-        .section p { color: #666; line-height: 1.8; }
+        .section h2 { color: #6B4C7A; margin-bottom: 15px; font-size: 1.2em; }
+        .section p { color: #5A4A6A; line-height: 1.8; }
+        .hobbies-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .hobby-tag {
+            background: rgba(107,76,122,0.1);
+            color: #6B4C7A;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
         .links { margin-top: 30px; text-align: center; }
         .links a {
             display: inline-block;
             margin: 10px;
             padding: 12px 25px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #D4B8D4, #C4A8C4);
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -72,47 +99,61 @@
         .links a:hover { transform: translateY(-3px); }
         footer {
             text-align: center;
-            color: rgba(255,255,255,0.7);
+            color: #8B6B9C;
             padding: 40px;
             margin-top: 80px;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
+    <div class="emoji-bg">🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺<br>
+    🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸<br>
+    🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻<br>
+    🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼<br>
+    🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸 🌷 🌺 🌻 🌹 💐 🌼 🌺 🌸</div>
+    
     <nav>
-        <a href="index.html" class="logo">athenen</a>
+        <a href="index.html" class="logo">Zihan</a>
         <div class="nav-links">
-            <a href="index.html">首页</a>
-            <a href="blog.html">博客</a>
-            <a href="about.html" class="active">关于</a>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html" class="active">About</a>
         </div>
     </nav>
     
     <div class="container">
         <div class="about-card">
-            <div class="avatar">A</div>
-            <h1>athenen</h1>
-            <p class="bio">热爱学习，享受生活</p>
+            <div class="avatar">Z</div>
+            <h1>Zihan Zhang</h1>
+            <p class="school">BJUT Fin'24 | PKU Econ Minor'25</p>
+            <p class="bio">Bird Watching | Painting | Reading | Outdoor Sports</p>
             
             <div class="section">
-                <h2>关于我</h2>
-                <p>我是阿森，一个热爱学习和分享的人。这个博客用来记录我的学习心得、生活感悟和技术笔记。</p>
+                <h2>About Me</h2>
+                <p>Hi, I'm Zihan! I'm a student at Beijing University of Technology, passionate about learning new things and exploring the world. This blog is where I document my learning journey and share my thoughts.</p>
             </div>
             
             <div class="section">
-                <h2>兴趣爱好</h2>
-                <p>阅读、编程、探索新事物...</p>
+                <h2>Hobbies & Interests</h2>
+                <div class="hobbies-list">
+                    <span class="hobby-tag">Bird Watching</span>
+                    <span class="hobby-tag">Painting</span>
+                    <span class="hobby-tag">Reading</span>
+                    <span class="hobby-tag">Outdoor Sports</span>
+                </div>
             </div>
             
             <div class="links">
                 <a href="https://github.com/athenen09" target="_blank">GitHub</a>
-                <a href="mailto:example@email.com">联系我</a>
+                <a href="mailto:example@email.com">Contact Me</a>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>© 2026 athenen. All rights reserved.</p>
+        <p>© 2026 Zihan Zhang. All rights reserved.</p>
     </footer>
 </body>
 </html>
